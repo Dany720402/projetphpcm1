@@ -1,0 +1,91 @@
+Nom de base de donner : 
+projEcommerce 
+
+creation : 
+CREATE TABLE Produits (
+    idProduit INT AUTO_INCREMENT PRIMARY KEY,        
+    nomProduit VARCHAR(100) NOT NULL,              
+    description TEXT,                               
+    prix DECIMAL(10,2) NOT NULL,                   
+    quantiteStock INT NOT NULL DEFAULT 0,         
+    categorie INT NOT NULL,                        
+    image VARCHAR(255)                           
+   
+);
+// insertion pour les ordinateur : 
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Ordinateur Dell', 'PC portable performant avec Intel Core i5, 8GB RAM, 256GB SSD.', 749.99, 10, 1, 'images/ordi1.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('HP Gaming', 'Ordinateur gamer avec Nvidia GTX 1650, Intel Core i7, 16GB RAM.', 1199.99, 5, 1, 'images/ordi2.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('MacBook', 'Laptop ultra-fin avec puce Apple M2, 8GB RAM, 512GB SSD.', 1299.99, 8, 1, 'images/ordi3.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Lenovo ThinkPad', 'PC professionnel avec Intel Core i7, 16GB RAM, 1TB SSD.', 1599.99, 3, 1, 'images/ordi4.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Asus ROG Zephyrus', 'Ordinateur gaming haut de gamme avec RTX 3060, Ryzen 7, 16GB RAM.', 1799.99, 4, 1, 'images/ordi5.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Acer', 'Laptop pour usage quotidien avec AMD Ryzen 5, 8GB RAM, 512GB SSD.', 649.99, 15, 1, 'images/ordi6.jpg');
+
+
+
+
+
+
+
+
+
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Tablette Samsung Galaxy Tab A7', 'Tablette 10.4 pouces avec écran WUXGA+ et 32GB de stockage.', 229.99, 15, 2, 'images/galaxy_tab_a7.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Apple iPad 10.2', 'iPad 10.2 pouces avec puce A13 Bionic, 64GB et compatibilité Apple Pencil.', 329.99, 12, 2, 'images/ipad_10_2.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Lenovo Tab M10', 'Tablette 10.1 pouces HD avec processeur octa-core et 64GB de stockage.', 189.99, 20, 2, 'images/lenovo_tab_m10.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Huawei MatePad 11', 'Tablette 11 pouces avec écran 120 Hz et 128GB de stockage.', 399.99, 8, 2, 'images/huawei_matepad_11.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Microsoft Surface Go 3', 'Tablette 10.5 pouces avec processeur Intel Pentium Gold et Windows 11.', 499.99, 5, 2, 'images/surface_go_3.jpg');
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('Xiaomi Pad 5', 'Tablette 11 pouces avec processeur Snapdragon 860 et 128GB de stockage.', 349.99, 10, 2, 'images/xiaomi_pad_5.jpg');
+
+
+
+
+
+INSERT INTO Produits (nomProduit, description, prix, quantiteStock, categorie, image)
+VALUES 
+('iPhone 13', 'Smartphone Apple avec écran Super Retina XDR de 6.1 pouces, 128GB de stockage.', 899.99, 20, 3, 'images/iphone_13.jpg'),
+('Samsung Galaxy S21', 'Smartphone avec écran AMOLED 6.2 pouces, triple caméra et 128GB de stockage.', 799.99, 25, 3, 'images/galaxy_s21.jpg'),
+('Google Pixel 6', 'Smartphone avec écran OLED de 6.4 pouces et processeur Google Tensor.', 649.99, 18, 3, 'images/pixel_6.jpg'),
+('OnePlus 9 Pro', 'Smartphone avec écran Fluid AMOLED de 6.7 pouces, 12GB RAM et 256GB stockage.', 969.99, 10, 3, 'images/oneplus_9_pro.jpg'),
+('Xiaomi Mi 11 Lite', 'Smartphone ultra fin avec écran AMOLED 6.55 pouces et 128GB de stockage.', 399.99, 30, 3, 'images/mi_11_lite.jpg'),
+('Sony Xperia 5 III', 'Smartphone compact avec écran OLED de 6.1 pouces et triple caméra Zeiss.', 899.99, 12, 3, 'images/xperia_5_iii.jpg');
+
+
+
+
+
+
